@@ -1,4 +1,4 @@
-;;; yadoxygen --- Doxygen support for Emacs via yasnippet templates
+;;; doxyas --- Doxygen support for Emacs via yasnippet templates
 
 ;;; Commentary:
 
@@ -7,7 +7,7 @@
 (require 'yasnippet)
 
 ;;;###autoload
-(defun yadoxygen-document-function ()
+(defun doxyas-document-function ()
   "Generate and expand a yasnippet template for function documentation."
   (interactive)
   (let ((semantic-enabled semantic-mode)
@@ -63,5 +63,5 @@
     (when snippet
       (yas-expand-snippet snippet))))
 
-(provide 'yadoxygen)
-;;; yadoxygen.el ends here
+(provide 'doxyas)
+;;; doxyas.el ends here
